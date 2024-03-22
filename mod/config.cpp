@@ -52,8 +52,8 @@ class CfgVehicles
 	{
 		scope=0
 		displayName="Identification Card";
-		descriptionShort="A way to uniquely identify a person";
-        model = "HL2_IDs\data\card.p3d";
+		descriptionShort="Key to seamless integration. This compact card serves as an identifier and access pass.";
+        model = "HL2_IDs\data\card\card.p3d";
         itemSize[] = {1, 2};
 		rotationFlags=1;
 		soundImpactType="plastic";
@@ -65,10 +65,10 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"HL2_IDs\data\hl2_card_CO.paa",
-            "HL2_IDs\data\hl2_card_lights_pink.paa"
+			"HL2_IDs\data\card\hl2_card_CO.paa",
+            "HL2_IDs\data\card\hl2_card_lights_pink.paa"
 		};
-		hiddenSelectionsMaterials[] = {"HL2_IDs\data\hl2_card.rvmat","HL2_IDs\data\hl2_card.rvmat"};
+		hiddenSelectionsMaterials[] = {"HL2_IDs\data\card\hl2_card.rvmat","HL2_IDs\data\card\hl2_card.rvmat"};
 
 		class DamageSystem
 		{
@@ -84,7 +84,7 @@ class CfgVehicles
 							1,
 							
 							{
-								"HL2_IDs\data\card.rvmat"
+								"HL2_IDs\data\card\card.rvmat"
 							}
 						},
 						
@@ -92,7 +92,7 @@ class CfgVehicles
 							0.69999999,
 							
 							{
-								"HL2_IDs\data\card.rvmat"
+								"HL2_IDs\data\card\card.rvmat"
 							}
 						},
 						
@@ -100,7 +100,7 @@ class CfgVehicles
 							0.5,
 							
 							{
-								"HL2_IDs\data\card_damage.rvmat"
+								"HL2_IDs\data\card\card_damage.rvmat"
 							}
 						},
 						
@@ -108,7 +108,7 @@ class CfgVehicles
 							0.30000001,
 							
 							{
-								"HL2_IDs\data\card_damage.rvmat"
+								"HL2_IDs\data\card\card_damage.rvmat"
 							}
 						},
 						
@@ -116,7 +116,7 @@ class CfgVehicles
 							0,
 							
 							{
-								"HL2_IDs\data\card_destruct.rvmat"
+								"HL2_IDs\data\card\card_destruct.rvmat"
 							}
 						}
 					};
@@ -128,72 +128,66 @@ class CfgVehicles
 	class HL2_IDCard_Citizen: HL2_IDCard_Base
 	{
 		scope=2
-		displayName="Citizen ID";
-		descriptionShort="A way to uniquely identify a person";
+		displayName="Citizen Identifier Card";
 		hiddenSelectionsTextures[]=
 		{
-			"HL2_IDs\data\hl2_card_CO.paa",
-            "HL2_IDs\data\hl2_card_lights_pink.paa"
+			"HL2_IDs\data\card\hl2_card_CO.paa",
+            "HL2_IDs\data\card\hl2_card_lights_pink.paa"
 		};
 	}
 
 	class HL2_IDCard_CA: HL2_IDCard_Base
 	{
 		scope=2
-		displayName="City Administration ID";
-		descriptionShort="A way to uniquely identify a person";
+		displayName="Civil Authority Identifier Card";
 		hiddenSelectionsTextures[]=
 		{
-			"HL2_IDs\data\hl2_card_ca_CO.paa",
-            "HL2_IDs\data\hl2_card_lights_red.paa"
+			"HL2_IDs\data\card\hl2_card_ca_CO.paa",
+            "HL2_IDs\data\card\hl2_card_lights_red.paa"
 		};
 	}
 
 	class HL2_IDCard_CWA: HL2_IDCard_Base
 	{
 		scope=2
-		displayName="City Workers Association ID";
-		descriptionShort="A way to uniquely identify a person";
+		displayName="City Worker's Association Card";
 		hiddenSelectionsTextures[]=
 		{
-			"HL2_IDs\data\hl2_card_cwa_CO.paa",
-            "HL2_IDs\data\hl2_card_lights_orange.paa"
+			"HL2_IDs\data\card\hl2_card_cwa_CO.paa",
+            "HL2_IDs\data\card\hl2_card_lights_orange.paa"
 		};
 	}
 
 	class HL2_IDCard_Business: HL2_IDCard_Base
 	{
 		scope=2
-		displayName="Business ID";
-		descriptionShort="A way to uniquely identify a person";
+		displayName="Business Identifier Card";
 		hiddenSelectionsTextures[]=
 		{
-			"HL2_IDs\data\hl2_card_business_CO.paa",
-            "HL2_IDs\data\hl2_card_lights_blue.paa"
+			"HL2_IDs\data\card\hl2_card_business_CO.paa",
+            "HL2_IDs\data\card\hl2_card_lights_blue.paa"
 		};
 	}
 
 	class HL2_IDCard_Loyal1: HL2_IDCard_Base
 	{
 		scope=2
-		displayName="Loyalist T1 ID";
-		descriptionShort="A way to uniquely identify a person";
+		displayName="Level 1 Loyalist Identifier Card";
 		hiddenSelectionsTextures[]=
 		{
-			"HL2_IDs\data\hl2_card_loyal1_CO.paa",
-            "HL2_IDs\data\hl2_card_lights_yellow.paa"
+			"HL2_IDs\data\card\hl2_card_loyal1_CO.paa",
+            "HL2_IDs\data\card\hl2_card_lights_yellow.paa"
 		};
 	}
 
 	class HL2_IDCard_Loyal2: HL2_IDCard_Base
 	{
 		scope=2
-		displayName="Loyalist T2 ID";
-		descriptionShort="A way to uniquely identify a person";
+		displayName="Level 2 Loyalist Identifier Card";
 		hiddenSelectionsTextures[]=
 		{
-			"HL2_IDs\data\hl2_card_loyal2_CO.paa",
-            "HL2_IDs\data\hl2_card_lights_yellow.paa"
+			"HL2_IDs\data\card\hl2_card_loyal2_CO.paa",
+            "HL2_IDs\data\card\hl2_card_lights_yellow.paa"
 		};
 	}
 };
