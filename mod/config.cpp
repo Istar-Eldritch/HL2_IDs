@@ -136,6 +136,17 @@ class CfgVehicles
 		};
 	}
 
+	class HL2_IDCard_CP: HL2_IDCard_Base
+	{
+		scope=2
+		displayName="Civil Protection Identifier Card";
+		hiddenSelectionsTextures[]=
+		{
+			"HL2_IDs\data\card\hl2_card_cp_CO.paa",
+            "HL2_IDs\data\card\hl2_card_lights_red.paa"
+		};
+	}
+
 	class HL2_IDCard_CA: HL2_IDCard_Base
 	{
 		scope=2
